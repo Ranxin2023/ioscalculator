@@ -67,12 +67,13 @@ equals.addEventListener('click', () => {
     result.innerHTML = resultValue;
     firstValue = resultValue;
     secondValue = "";
+    checkResultLength()
 })
 
 function checkResultLength() {
-    resultValueStr = JSON.stringify(resultValue)
-    if (resultValueStr.length > 8) {
-        resultValue = JSON.parse(resultValueStr)
+    resultValue = JSON.stringify(resultValue)
+    if (resultValue.length > 8) {
+        resultValue = JSON.parse(resultValue)
         result.innerHTML = resultValue.toFixed(5)
     }
 }
