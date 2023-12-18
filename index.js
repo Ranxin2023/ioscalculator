@@ -106,7 +106,7 @@ clear.addEventListener('click', () => {
     firstValue = ""
     isFirstValue = false
     secondValue = ""
-    isSecondValue = ""
+    isSecondValue = false
     sign = ""
     resultValue = 0
 })
